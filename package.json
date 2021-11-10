@@ -13,16 +13,16 @@
   "publishConfig": {
     "access": "public"
   },
-  "bin": "bin/scripts.js",
+  "bin": "bin/devkit.js",
   "files": [
     "bin/",
     "scripts/"
   ],
   "scripts": {
-    "lint": "node ./bin/scripts lint",
-    "test": "node ./bin/scripts test",
-    "format": "node ./bin/scripts format",
-    "prepare": "node ./bin/scripts hook"
+    "lint": "node ./bin/devkit lint",
+    "test": "node ./bin/devkit test",
+    "format": "node ./bin/devkit format",
+    "prepare": "node ./bin/devkit hook"
   },
   "dependencies": {
     "@akijoey/commitlint-config": "latest",
