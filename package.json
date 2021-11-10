@@ -1,6 +1,6 @@
 {
   "name": "@akijoey/devkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Develop scripts dependencies collection.",
   "keywords": [
     "dev"
