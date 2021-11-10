@@ -1,0 +1,59 @@
+{
+  "name": "@akijoey/devkit",
+  "version": "1.0.0",
+  "description": "Develop scripts dependencies collection.",
+  "keywords": [
+    "dev"
+  ],
+  "repository": "github:akijoey/devkit",
+  "homepage": "https://github.com/akijoey/devkit#readme",
+  "bugs": "https://github.com/akijoey/devkit/issues",
+  "author": "AkiJoey <akijoey@akijoey.com> (https://akijoey.com)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": "bin/scripts.js",
+  "files": [
+    "bin/",
+    "scripts/"
+  ],
+  "scripts": {
+    "lint": "node ./bin/scripts lint",
+    "test": "node ./bin/scripts test",
+    "format": "node ./bin/scripts format",
+    "prepare": "node ./bin/scripts hook"
+  },
+  "dependencies": {
+    "@akijoey/commitlint-config": "latest",
+    "@akijoey/eslint-config": "latest",
+    "@akijoey/prettier-config": "latest",
+    "@akijoey/semantic-release-config": "latest",
+    "@akijoey/stylelint-config": "latest",
+    "@akijoey/tsconfig": "latest",
+    "@commitlint/cli": "^12.1.4",
+    "codecov": "^3.8.3",
+    "eslint": "^7.30.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
+    "semantic-release": "^17.4.4",
+    "stylelint": "^13.13.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": "@akijoey"
+  },
+  "prettier": "@akijoey/prettier-config",
+  "commitlint": {
+    "extends": "@akijoey/commitlint-config"
+  },
+  "release": {
+    "extends": "@akijoey/semantic-release-config"
+  },
+  "lint-staged": {
+    "*.js": "npm run lint",
+    "*.{js,json,yml}": "npm run format"
+  }
+}

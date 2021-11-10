@@ -1,0 +1,14 @@
+{
+  "extends": [
+    ":dependencyDashboard",
+    ":ignoreModulesAndTests",
+    ":maintainLockFilesWeekly",
+    ":automergeAll"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "enabled": false
+    }
+  ]
+}
