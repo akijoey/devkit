@@ -13,8 +13,8 @@ jobs:
         with:
           node-version: lts/*
       - run: yarn --frozen-lockfile
-      - run: node ./bin/devkit test
-      - run: node ./bin/devkit release
+      - run: yarn test
+      - run: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

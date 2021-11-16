@@ -24,7 +24,8 @@
     "lint": "node ./bin/devkit lint",
     "test": "node ./bin/devkit test",
     "format": "node ./bin/devkit format",
-    "prepare": "node ./bin/devkit hook"
+    "prepare": "node ./bin/devkit hook",
+    "release": "node ./bin/devkit release"
   },
   "dependencies": {
     "@akijoey/commitlint-config": "latest",
