@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/akijoey/devkit/compare/v1.1.0...v1.1.1) (2021-11-16)
+
+
+### Bug Fixes
+
+* git hooks ([bb7e6b7](https://github.com/akijoey/devkit/commit/bb7e6b7631b42a3d2ba8ad5106986ce214e5a2f4))
+
 # [1.1.0](https://github.com/akijoey/devkit/compare/v1.0.1...v1.1.0) (2021-11-16)
 
 
