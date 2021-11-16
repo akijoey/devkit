@@ -1,21 +1,14 @@
-const argv = process.argv
-const env = process.env
+const { exec } = require('../lib/exec')
 
 async function test() {
-  if (argv.length === 2) {
-    argv.push('.+\\.test\\.js$', '--coverage', '--passWithNoTests')
-  }
-  const args = argv.slice(2).join(' ')
-  console.log(`> jest ${args}\n`)
-  argv.push('--detectOpenHandles')
-  if (env.NODE_ENV == null) {
-    env.NODE_ENV = 'test'
-  }
-  await require('jest-cli').run()
-  if (env.CI && argv.includes('--coverage')) {
-    argv.splice(2)
-    console.log(`\n> codecov\n`)
-    require('codecov/bin/codecov')
+  await exec('jest', [
+    '.+\\.test\\.js$',
+    '--coverage',
+    '--passWithNoTests',
+    ...process.argv.slice(2)
+  ])
+  if (process.env.CI) {
+    exec('codecov')
   }
 }
 

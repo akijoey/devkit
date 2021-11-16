@@ -7,8 +7,8 @@ process.on('unhandledRejection', err => {
   throw err
 })
 
-const scripts = ['format', 'lint', 'test', 'hook']
-const targets = ['script', 'style']
+const scripts = ['format', 'lint', 'test', 'hook', 'release']
+const targets = ['script', 'style', 'commit', 'staged']
 scripts.push(...targets.map(target => `lint:${target}`))
 
 const index = args.findIndex(arg => scripts.includes(arg))

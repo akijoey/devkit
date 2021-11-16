@@ -1,34 +1,26 @@
 const fs = require('fs')
-const argv = process.argv
+
+const { exec } = require('../lib/exec')
 
 const presets = [
   {
     hook: 'pre-commit',
-    command: 'npx --no-install lint-staged'
+    command: 'yarn devkit lint:staged'
   },
   {
     hook: 'commit-msg',
-    command: 'npx --no-install commitlint --edit $1'
+    command: 'yarn devkit lint:commit'
   }
 ]
 
-function hook() {
-  if (argv.length === 2) {
-    argv.push('install')
-  }
-  const args = argv.slice(2).join(' ')
-  console.log(`> husky ${args}\n`)
-  require('husky/lib/bin')
-  if (argv[2] === 'install') {
-    presets.forEach(preset => {
-      const file = '.husky/' + preset.hook
-      if (!fs.existsSync(file)) {
-        const husky = require('husky/lib')
-        console.log(`\n> husky add ${file} '${preset.command}'\n`)
-        husky.add(file, preset.command)
-      }
-    })
-  }
+async function hook() {
+  await exec('husky', ['install'])
+  presets.forEach(async preset => {
+    const file = '.husky/' + preset.hook
+    if (!fs.existsSync(file)) {
+      await exec('husky', ['add', file, preset.command])
+    }
+  })
 }
 
 if (require.main === module) {

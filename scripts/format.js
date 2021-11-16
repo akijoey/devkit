@@ -1,19 +1,18 @@
-const argv = process.argv
+const { exec } = require('../lib/exec')
+const { resolve } = require('../lib/config')
 
 function format() {
-  if (argv.length === 2) {
-    argv.push(
-      '--ignore-path',
-      '.gitignore',
-      '-u',
-      '-w',
-      '.',
-      '!((**/)?CHANGELOG.md)'
-    )
-  }
-  const args = argv.slice(2).join(' ')
-  console.log(`> prettier ${args}\n`)
-  require('prettier/bin-prettier')
+  exec('prettier', [
+    '--ignore-path',
+    '.gitignore',
+    '--config',
+    resolve('prettier'),
+    '-u',
+    '-w',
+    '.',
+    '!((**/)?CHANGELOG.md)',
+    ...process.argv.slice(2)
+  ])
 }
 
 if (require.main === module) {

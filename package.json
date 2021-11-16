@@ -16,6 +16,8 @@
   "bin": "bin/devkit.js",
   "files": [
     "bin/",
+    "lib/",
+    "config/",
     "scripts/"
   ],
   "scripts": {
@@ -33,27 +35,14 @@
     "@akijoey/tsconfig": "latest",
     "@commitlint/cli": "^12.1.4",
     "codecov": "^3.8.3",
+    "cosmiconfig": "^7.0.1",
     "eslint": "^7.30.0",
+    "execa": "^5.1.1",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.2",
     "semantic-release": "^17.4.4",
     "stylelint": "^13.13.1"
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": "@akijoey"
-  },
-  "prettier": "@akijoey/prettier-config",
-  "commitlint": {
-    "extends": "@akijoey/commitlint-config"
-  },
-  "release": {
-    "extends": "@akijoey/semantic-release-config"
-  },
-  "lint-staged": {
-    "*.js": "npm run lint",
-    "*.{js,json,yml}": "npm run format"
   }
 }
