@@ -3,14 +3,14 @@ const path = require('path')
 const { explor } = require('../lib/config')
 
 const config = {
-  '*.{js,ts,tsx}': 'yarn devkit lint:script',
-  '*.{css,scss,sass,less,styl}': 'yarn devkit lint:style',
-  '*': 'yarn devkit format'
+  '*.{js,ts,tsx}': 'devkit lint:script',
+  '*.{css,scss,sass,less,styl}': 'devkit lint:style',
+  '*': 'devkit format'
 }
 
 if (__dirname === path.join(process.cwd(), '/config')) {
   Object.keys(config).forEach(key => {
-    config[key] = config[key].replace('yarn ', 'node ./bin/')
+    config[key] = 'node ./bin/' + config[key]
   })
 }
 

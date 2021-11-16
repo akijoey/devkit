@@ -5,11 +5,11 @@ const { exec } = require('../lib/exec')
 const presets = [
   {
     hook: 'pre-commit',
-    command: 'yarn devkit lint:staged'
+    command: 'npx devkit lint:staged'
   },
   {
     hook: 'commit-msg',
-    command: 'yarn devkit lint:commit'
+    command: 'npx devkit lint:commit'
   }
 ]
 
