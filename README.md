@@ -25,9 +25,9 @@ Format script.
 
 `$ devkit format`
 
-Hook script.
+Prepare script.
 
-`$ devkit hook`
+`$ devkit prepare`
 
 ## License
 

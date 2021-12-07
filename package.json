@@ -24,7 +24,7 @@
     "lint": "node ./bin/devkit lint",
     "test": "node ./bin/devkit test",
     "format": "node ./bin/devkit format",
-    "prepare": "node ./bin/devkit hook",
+    "prepare": "node ./bin/devkit prepare",
     "release": "node ./bin/devkit release"
   },
   "dependencies": {
@@ -34,16 +34,16 @@
     "@akijoey/semantic-release-config": "latest",
     "@akijoey/stylelint-config": "latest",
     "@akijoey/tsconfig": "latest",
-    "@commitlint/cli": "^12.1.4",
+    "@commitlint/cli": "^15.0.0",
     "codecov": "^3.8.3",
     "cosmiconfig": "^7.0.1",
-    "eslint": "^7.30.0",
+    "eslint": "^8.4.1",
     "execa": "^5.1.1",
-    "husky": "^7.0.1",
-    "jest": "^27.0.6",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.3.2",
-    "semantic-release": "^17.4.4",
-    "stylelint": "^13.13.1"
+    "husky": "^7.0.4",
+    "jest": "^27.4.3",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
+    "semantic-release": "^18.0.1",
+    "stylelint": "^14.1.0"
   }
 }

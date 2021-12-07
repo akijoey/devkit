@@ -39,15 +39,15 @@ function parseTarget() {
   }
 }
 
-function lint(target) {
-  exec(target.command, [...target.argv, ...argv.slice(2)])
+async function lint() {
+  const target = parseTarget()
+  for (const key in targets) {
+    if ((!target && targets[key].default) || target === key) {
+      await exec(targets[key].command, [...targets[key].argv, ...argv.slice(2)])
+    }
+  }
 }
 
 if (require.main === module) {
-  const target = parseTarget()
-  Object.keys(targets).forEach(async key => {
-    if ((!target && targets[key].default) || target === key) {
-      await lint(targets[key])
-    }
-  })
+  lint()
 }

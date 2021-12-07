@@ -7,7 +7,7 @@ process.on('unhandledRejection', err => {
   throw err
 })
 
-const scripts = ['format', 'lint', 'test', 'hook', 'release']
+const scripts = ['format', 'lint', 'test', 'prepare', 'release']
 const targets = ['script', 'style', 'commit', 'staged']
 scripts.push(...targets.map(target => `lint:${target}`))
 
