@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/akijoey/devkit/compare/v1.1.1...v1.1.2) (2021-12-07)
+
+
+### Bug Fixes
+
+* rename prepare ([74a7360](https://github.com/akijoey/devkit/commit/74a7360694cff46ab44e5d02548b387b365e8108))
+
 ## [1.1.1](https://github.com/akijoey/devkit/compare/v1.1.0...v1.1.1) (2021-11-16)
 
 
