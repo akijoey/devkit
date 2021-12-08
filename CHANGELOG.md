@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/akijoey/devkit/compare/v1.1.2...v1.1.3) (2021-12-08)
+
+
+### Bug Fixes
+
+* upgrade typescript ([ad83cce](https://github.com/akijoey/devkit/commit/ad83ccebb854e063768f1bef24b216b2ad4285fd))
+
 ## [1.1.2](https://github.com/akijoey/devkit/compare/v1.1.1...v1.1.2) (2021-12-07)
 
 
