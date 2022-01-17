@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/akijoey/devkit/compare/v1.1.3...v1.1.4) (2022-01-17)
+
+
+### Bug Fixes
+
+* eslint error ([9559112](https://github.com/akijoey/devkit/commit/9559112c831d0aa1499e3afd36f9872a0493b9ed))
+
 ## [1.1.3](https://github.com/akijoey/devkit/compare/v1.1.2...v1.1.3) (2021-12-08)
 
 
