@@ -6,7 +6,14 @@ const argv = process.argv
 const targets = {
   script: {
     command: 'eslint',
-    argv: ['--ignore-path', '.gitignore', '-c', resolve('eslint'), '.'],
+    argv: [
+      '--ignore-path',
+      '.gitignore',
+      '-c',
+      resolve('eslint'),
+      '--no-error-on-unmatched-pattern',
+      '.'
+    ],
     default: true
   },
   style: {
