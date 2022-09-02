@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/akijoey/devkit/compare/v1.1.4...v1.1.5) (2022-09-02)
+
+
+### Bug Fixes
+
+* upgrade dependencies ([15a5032](https://github.com/akijoey/devkit/commit/15a5032203c074513c5a11e215798d1b664d87e3))
+
 ## [1.1.4](https://github.com/akijoey/devkit/compare/v1.1.3...v1.1.4) (2022-01-17)
 
 
