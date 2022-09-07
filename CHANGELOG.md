@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/akijoey/devkit/compare/v1.1.5...v1.1.6) (2022-09-07)
+
+
+### Bug Fixes
+
+* release from local machine ([f5ff98d](https://github.com/akijoey/devkit/commit/f5ff98d8d10e1f4dd08df5eebecb4bc8eaf5a8f6))
+
 ## [1.1.5](https://github.com/akijoey/devkit/compare/v1.1.4...v1.1.5) (2022-09-02)
 
 
