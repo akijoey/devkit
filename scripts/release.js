@@ -7,6 +7,9 @@ function release() {
   if (!explor('release')) {
     argv.push('-e', '@akijoey/semantic-release-config')
   }
+  if (!process.env.CI) {
+    argv.push('--no-ci')
+  }
   exec('semantic-release', argv.slice(2))
 }
 
