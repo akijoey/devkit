@@ -35,7 +35,7 @@ Prepare script.
 
 [npm-image]: https://img.shields.io/npm/v/@akijoey/devkit
 [npm-url]: https://www.npmjs.com/package/@akijoey/devkit
-[build-image]: https://img.shields.io/github/workflow/status/akijoey/devkit/Build
+[build-image]: https://img.shields.io/github/actions/workflow/status/akijoey/devkit/build.yml
 [build-url]: https://github.com/akijoey/devkit/actions/workflows/build.yml
 [coverage-image]: https://img.shields.io/codecov/c/gh/akijoey/devkit
 [coverage-url]: https://codecov.io/gh/akijoey/devkit
