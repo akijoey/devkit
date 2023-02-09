@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/akijoey/devkit/compare/v1.1.6...v1.1.7) (2023-02-09)
+
+
+### Bug Fixes
+
+* maintain lockfile monthly ([b58aab3](https://github.com/akijoey/devkit/commit/b58aab322f0d0b2846001ec8847d9b68d5e05ff0))
+
 ## [1.1.6](https://github.com/akijoey/devkit/compare/v1.1.5...v1.1.6) (2022-09-07)
 
 
