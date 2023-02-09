@@ -2,7 +2,7 @@
   "extends": [
     ":dependencyDashboard",
     ":ignoreModulesAndTests",
-    ":maintainLockFilesWeekly",
+    ":maintainLockFilesMonthly",
     ":automergeAll"
   ],
   "packageRules": [
