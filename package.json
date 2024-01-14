@@ -34,17 +34,17 @@
     "@akijoey/semantic-release-config": "latest",
     "@akijoey/stylelint-config": "latest",
     "@akijoey/tsconfig": "latest",
-    "@commitlint/cli": "^17.0.0",
+    "@commitlint/cli": "^18.0.0",
     "codecov": "^3.8.3",
-    "cosmiconfig": "^7.0.1",
-    "eslint": "^8.23.0",
+    "cosmiconfig": "^9.0.0",
+    "eslint": "^8.56.0",
     "execa": "^5.1.1",
-    "husky": "^8.0.1",
-    "jest": "^29.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "semantic-release": "^19.0.5",
-    "stylelint": "^14.11.0",
-    "typescript": "^4.8.2"
+    "husky": "^8.0.3",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "semantic-release": "^22.0.0",
+    "stylelint": "^16.1.0",
+    "typescript": "^5.3.3"
   }
 }
