@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/akijoey/devkit/compare/v1.1.7...v1.2.0) (2024-01-14)
+
+
+### Features
+
+* cosmiconfig search strategy ([4cbb8e2](https://github.com/akijoey/devkit/commit/4cbb8e2b964da955af20170d953278155797073f))
+
 ## [1.1.7](https://github.com/akijoey/devkit/compare/v1.1.6...v1.1.7) (2023-02-09)
 
 
