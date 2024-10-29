@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/akijoey/devkit/compare/v1.2.0...v1.2.1) (2024-10-29)
+
+
+### Bug Fixes
+
+* ignore codecov updater error ([f0cddef](https://github.com/akijoey/devkit/commit/f0cddef7269ecb2dc3d85cc74cba2501cf4af496))
+
 # [1.2.0](https://github.com/akijoey/devkit/compare/v1.1.7...v1.2.0) (2024-01-14)
 
 
