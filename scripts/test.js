@@ -8,7 +8,7 @@ async function test() {
     ...process.argv.slice(2)
   ])
   if (process.env.CI) {
-    exec('codecov')
+    exec('codecov || :')
   }
 }
 
